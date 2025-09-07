@@ -46,7 +46,7 @@ The German Traffic Sign Benchmark is a multi-class, single-image classification 
 Clone the repo or directly open the `.ipynb` notebook in Colab.
 
 2️⃣ Mount Google Drive
-
+"First download the Dataset in your Desktop then upload the archive.zip file in your drive then Import it using the below code"
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
@@ -58,10 +58,10 @@ If you don’t want to train from scratch, download the pre-trained model:
 
 ```python
 !pip install gdown
-!gdown --id YOUR_FILE_ID
+!gdown --id 1ICqwuiEvdgT5bDeOWA-PqOMudAlLFSI3
 ```
 
-Replace `YOUR_FILE_ID` with the shared Google Drive / HuggingFace model file ID.
+
 
 4️⃣ Load Model
 
