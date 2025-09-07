@@ -51,10 +51,19 @@ Clone the repo or directly open the `.ipynb` notebook in Colab.
 from google.colab import drive
 drive.mount('/content/drive')
 ```
+3️⃣ Download the model from this G.drive link and upload it to in your G.drive then use this below code to import the model(Prefered step). 
+Google Drive File Link of the model:- https://drive.google.com/file/d/1o1AlXqdH1-pdcaou72_EiQfILzjenujO/view?usp=drivesdk
+```python
+from tensorflow.keras.models import load_model
+from google.colab import drive
+drive.mount('/content/drive')
+model = load_model('/content/drive/MyDrive/traffic_control_system_cnn.h5')
+print("✅ Model loaded successfully") 
+```
+                     or
+Download Pretrained Model
 
- 3️⃣ Download Pretrained Model
-
-If you don’t want to train from scratch, download the pre-trained model:
+If you don’t want to train from scratch, download the pre-trained model(if not working use the first one):
 
 ```python
 !pip install gdown
